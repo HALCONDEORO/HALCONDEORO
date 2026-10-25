@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="140" viewBox="0 0 480 140" role="img" aria-labelledby="title desc">
+<title id="title">Marco Tevar</title>
+<desc id="desc">MACD Adaptive · Ireland · ES / EN. Websites, booking systems and open-source experiments.</desc>
+<rect width="480" height="140" rx="12" fill="#101923"/>
+<path d="M24 22V118" stroke="#94b6bd" stroke-width="3"/>
+<g font-family="system-ui,sans-serif" fill="#e5eaf0">
+<text x="42" y="56" font-size="26">Marco Tevar</text>
+<text x="42" y="86" font-size="15" fill="#aebdca">MACD Adaptive · Ireland · ES / EN</text>
+<text x="42" y="112" font-size="13">Websites, booking systems &amp; open-source experiments</text>
+</g></svg>
