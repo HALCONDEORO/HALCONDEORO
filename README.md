@@ -26,7 +26,7 @@ Public, original repositories only - the card shows the counts and when they wer
 
 Counts cover public, non-fork repositories owned by **HALCONDEORO**. Stars and forks are received on those original repositories. Recent projects are the four most recently pushed originals with a recorded push date; dates are repository push dates, not personal commit counts or evidence of a release. Empty repositories still count toward totals.
 
-The SVG is generated locally by [a dependency-free Node 22 script](scripts/stats.mjs), using only the anonymous, paginated public GitHub API. Its UTC timestamp records the successful retrieval. A [workflow](.github/workflows/profile-stats.yml) attempts a refresh on pushes to `main`, daily, and on manual dispatch. On failure it keeps the last successful artifact and reports an error; the displayed timestamp may therefore be older.
+The SVG is generated locally by [a dependency-free Node 22 script](scripts/stats.mjs), using only the anonymous, paginated public GitHub API. Its UTC timestamp records the successful retrieval. A [workflow](.github/workflows/profile-stats.yml) attempts a refresh on pushes to `main`, every six hours, and on manual dispatch. On failure it keeps the last successful artifact and reports an error; the displayed timestamp may therefore be older.
 
 No external stats widgets, private activity, visitor tracking or skill scores.
 
