@@ -36,6 +36,13 @@ test('empty repositories count toward metrics but have no recent push', () => {
   assert.deepEqual([result.repositories, result.stars, result.forks], [1, 7, 3]);
   assert.deepEqual(result.recent, []);
 });
+test('owner-chosen exclusions leave recent projects but stay in totals', () => {
+  const excluded = { ...fixture[0], id: 99, name: 'vidaa-clean-tv', pushed_at: '2999-01-01T00:00:00Z' };
+  const result = metrics([fixture[0], fixture[1], excluded]);
+  assert.deepEqual([result.repositories, result.stars], [3, 16]);
+  assert.ok(!result.recent.some(repo => repo.name === 'vidaa-clean-tv'));
+  assert.equal(result.recent[0].name, 'newer<&');
+});
 test('recent projects are capped at four', () => {
   assert.equal(metrics(Array.from({ length: 6 }, (_, i) => ({ ...fixture[0], id: i }))).recent.length, 4);
 });

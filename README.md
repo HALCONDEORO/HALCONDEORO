@@ -8,11 +8,17 @@ Trabajo en herramientas prácticas para pequeños negocios. Hablo español e ing
 
 [MACD · current work](https://macd.ie) · [CV repository](https://github.com/HALCONDEORO/cv) · [CV website](https://halcondeoro.github.io/cv/)
 
+## What I build with
+
+Python · JavaScript (Node) · HTML/CSS · SQLite · GitHub Actions · WhatsApp Business API
+
 ## Projects in progress
 
-- **[MACD Adaptive](https://macd.ie)** — current work on booking systems, reminders, websites and WhatsApp ordering for small businesses. Tools under development, with a focus on accessibility and plain language.
-- **[Almojarife](https://github.com/HALCONDEORO/almojarife-game)** — an open-source sea-trading browser game set on the Iberian and Mediterranean coast in the 15th–16th centuries. Early development, in English and Spanish. [Try the development build](https://halcondeoro.github.io/almojarife-game/).
-- **[Sign-language mosaic](https://github.com/HALCONDEORO/jw-sign-mosaic)** — an experimental personal video-wall page for sign-language videos from a public streaming catalog. Early development.
+| Project | What it is | Status |
+| --- | --- | --- |
+| [MACD Adaptive](https://macd.ie) | Booking systems, reminders, websites and WhatsApp ordering for small businesses, with a focus on accessibility and plain language. | Current work |
+| [Almojarife](https://github.com/HALCONDEORO/almojarife-game) | Open-source sea-trading browser game set on the Iberian and Mediterranean coast in the 15th–16th centuries, in English and Spanish. [Try the development build](https://halcondeoro.github.io/almojarife-game/). | Early development |
+| [Sign-language mosaic](https://github.com/HALCONDEORO/jw-sign-mosaic) | Experimental personal video-wall page for sign-language videos from a public streaming catalog. | Early development |
 
 ## Public repository activity
 
@@ -24,7 +30,7 @@ Public, original repositories only - the card shows the counts and when they wer
 <details>
 <summary>How the stats are generated</summary>
 
-Counts cover public, non-fork repositories owned by **HALCONDEORO**. Stars and forks are received on those original repositories. Recent projects are the four most recently pushed originals with a recorded push date; dates are repository push dates, not personal commit counts or evidence of a release. Empty repositories still count toward totals.
+Counts cover public, non-fork repositories owned by **HALCONDEORO**. Stars and forks are received on those original repositories. Recent projects are the four most recently pushed originals with a recorded push date; dates are repository push dates, not personal commit counts or evidence of a release. The owner can exclude specific repositories from this list (`RECENT_EXCLUSIONS` in the generator); exclusions change only the list, never the totals. Empty repositories still count toward totals.
 
 The SVG is generated locally by [a dependency-free Node 22 script](scripts/stats.mjs), using only the anonymous, paginated public GitHub API. Its UTC timestamp records the successful retrieval. A [workflow](.github/workflows/profile-stats.yml) attempts a refresh on pushes to `main`, every six hours, and on manual dispatch. On failure it keeps the last successful artifact and reports an error; the displayed timestamp may therefore be older.
 
