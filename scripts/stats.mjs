@@ -23,6 +23,10 @@ export async function fetchRepos(fetchImpl = fetch) {
   }
 }
 
+// Repositories the owner chooses not to feature in the recent-projects list.
+// Totals (counts, stars, forks) still include them; only the list omits them.
+export const RECENT_EXCLUSIONS = new Set(['vidaa-clean-tv']);
+
 export function metrics(repos) {
   const seen = new Set();
   const own = repos.filter(repo => {
@@ -42,7 +46,7 @@ export function metrics(repos) {
     repositories: own.length,
     stars: own.reduce((sum, repo) => sum + repo.stargazers_count, 0),
     forks: own.reduce((sum, repo) => sum + repo.forks_count, 0),
-    recent: own.filter(repo => repo.pushed_at !== null).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at) || a.name.localeCompare(b.name)).slice(0, 4),
+    recent: own.filter(repo => repo.pushed_at !== null && !RECENT_EXCLUSIONS.has(repo.name)).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at) || a.name.localeCompare(b.name)).slice(0, 4),
   };
 }
 
